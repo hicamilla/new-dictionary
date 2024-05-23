@@ -11,7 +11,6 @@ export default function Dictionary() {
     setResults(response.data[0]);
   }
 
-
   function search(event) {
     event.preventDefault();
 
