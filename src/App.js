@@ -1,21 +1,23 @@
 import logo from './logo.png';
 import './App.css';
 import Dictionary from "./Dictionary";
-import Footer from "./Footer";
-
 
 
 export default function App() {
   return (
     <div className="App">
       <div className="container">
-          <header className="App-header"> <img src={logo} className="App-logo img-fluid" alt="logo" />
+        <header className="App-header">
+          <img src={logo} className="App-logo img-fluid" alt="logo" />
+          <h1>Dictionary</h1>
         </header>
+        
         <main>
           <Dictionary />
         </main>
+
         <footer>
-          <Footer />
+          <p className="App-footer"> Created by Camilla with tons of ☕ . It's available as open-source on <a href="https://github.com/hicamilla/new-dictionary">GitHub</a> </p>
       </footer>
       </div>
     </div>
