@@ -1,0 +1,12 @@
+.Results .word{
+  font-size: 35px;
+  color: #717067;
+  text-align: center;
+  padding-top: 10px
+}
+
+.Results .phonetic{
+  font-size: 20px;
+  color:#717067;
+  font-style: italic;
+}

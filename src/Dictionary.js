@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Results from "./Results";
-import Photos from "./Photos"
+import Photos from "./Photos";
 import axios from "axios";
 import "./Dictionary.css";
 
@@ -15,16 +15,17 @@ export default function Dictionary(props) {
   }
 
   function handleImageResponse(response) {
+    console.log(response);
     setPhotos(response.data.photos);
   }
 
   function search() {
-    let apiKey = "927adff4309ccc33tb7fd3o104741c05";
-    let apiUrl = "https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}";
+    let apiKey = "07944d6694a03tbbadbf6e7o423a9f8f";
+    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
 
     let imageApiKey = "07944d6694a03tbbadbf6e7o423a9f8f";
-    let imagesApiUrl = "https://api.shecodes.io/images/v1/search?query=${keyword}&key=${imageApiKey}";
+    let imagesApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${imageApiKey}`;
     axios.get(imagesApiUrl).then(handleImageResponse);
   }
 
@@ -45,18 +46,24 @@ export default function Dictionary(props) {
   if (loaded) {
     return (
       <div className="Dictionary">
-         <h1>Dictionary</h1>
         <section>
           <form onSubmit={handleSubmit}>
-            <input type="search" onChange={handleKeywordChange} defaultValue={props.defaultKeyword} />
+            <input
+              type="search"
+              onChange={handleKeywordChange}
+              defaultValue={props.defaultKeyword}
+            />
           </form>
-          <div className="hint">
-            i.e., cynical, ambiguous, apathetic... 
+          <div className="exemple">
+            i.e., sunset, underground, shadow, etc...
           </div>
         </section>
         <Results results={results} />
         <Photos photos={photos} />
       </div>
-    )
+    );
+  } else {
+    load();
+    return "Loading...";
   }
 }

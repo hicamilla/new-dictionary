@@ -1,29 +1,24 @@
 .Dictionary section{
   font-family: "Raleway", sans-serif;
-  background-color: #C8C7BB;
+  background-color: #E0DED2;
   padding: 30px;
   border-radius: 10px;
   margin: 20px 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.Dictionary h1{
-  text-align: left;
-  margin: 0;
-  font-size: 18px;
-  font-weight: light;
-}
-
 .Dictionary input{
+  font-size: 15px;
   width: 100%;
   border-radius: 5px;
-  padding: 6px 4px;
+  padding: 12px 5%;
   border: 1px solid #b7bdad;
 }
 
-.Dictionary hint{
+.Dictionary .exemple{
   text-align: left;
-  font-size: 12px;
-  opacity: 0.7;
-  margin-top: 5px;
+  font-size: 13px;
+  font-style: italic;
+  opacity: 0.8;
+  margin-top: 10px;
 }

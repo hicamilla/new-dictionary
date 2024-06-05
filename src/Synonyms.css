@@ -1,12 +1,9 @@
-.Synonyms{
-  margin:0;
-  padding:0;
-}
-
 .Synonyms li{
-  display: inline-block;
   font-size: 13px;
-  padding-right: 12px;
   line-height: 1;
-  margin-top: 20px;
+  display:inline-flex;
+  border: 1px solid #bbadbd;
+  border-radius: 16px;
+  padding: 05px 10px;
+  margin-top: 15px;
 }
