@@ -2,7 +2,8 @@
   text-align: center;
   background-color: #F6F3EE;
   color: #555B53;
-  margin: 35px 100px;
+  max-width: 960px;
+  margin: 0 auto;
   padding: 50px 5px;
   border-radius: 5px;
 }
