@@ -1,9 +1,32 @@
-.Synonyms li{
-  font-size: 13px;
-  line-height: 1;
-  display:inline-flex;
-  border: 1px solid #bbadbd;
-  border-radius: 16px;
-  padding: 05px 10px;
-  margin-top: 15px;
+:root {
+	--first-font: "Oswald", sans-serif;
+	--second-font: "Noto Sans JP", sans-serif;
+	--yew-color: #184e46;
+	--sky-color: #d5dfed;
+	--sea-color: #d5e6d8;
+	--yorkstone-color: #f3eddf;
+	--name-color: #dad5c8;
+	--raven-color: #444444;
+	--cloud-color: #efefef;
+	--white-color: #ffffff;
+	--copper-color: #6734;
+}
+
+ul {
+	padding-left: 0 !important;
+	list-style: none;
+}
+
+.Synonyms li {
+	display: inline-table;
+	font-family: var(--second-font);
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1;
+	border: 3px solid var(--sea-color);
+	border-radius: 14px;
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 24px;
+	padding: 05px 10px;
+	margin-top: 15px;
+	margin-right: 5px;
 }

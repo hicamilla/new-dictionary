@@ -55,7 +55,7 @@ export default function Dictionary(props) {
             />
           </form>
           <div className="exemple">
-            i.e., sunset, underground, shadow, etc...
+            You can serch for words like sunset, monster, shadow, or any other. 
           </div>
         </section>
         <Results results={results} />

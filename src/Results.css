@@ -1,12 +1,33 @@
-.Results .word{
-  font-size: 35px;
-  color: #717067;
-  text-align: center;
-  padding-top: 10px
+:root {
+	--first-font: "Oswald", sans-serif;
+	--second-font: "Noto Sans JP", sans-serif;
+	--yew-color: #184e46;
+	--sky-color: #d5dfed;
+	--sea-color: #d5e6d8;
+	--yorkstone-color: #f3eddf;
+	--name-color: #dad5c8;
+	--raven-color: #444444;
+	--cloud-color: #efefef;
+	--white-color: #ffffff;
+	--copper-color: #6734;
 }
 
-.Results .phonetic{
-  font-size: 20px;
-  color:#717067;
-  font-style: italic;
+.Results .word {
+	font-family: var(--second-font);
+	color: var(--raven-color) !important;
+	font-size: 30px;
+	font-weight: 800;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.Results .phonetic {
+	font-family: var(--second-font) !important;
+	color: var(--yew-color);
+	font-size: 20px;
+	font-weight: 500;
+	text-align: center;
+	font-style: italic;
+	padding-top: 15px;
 }

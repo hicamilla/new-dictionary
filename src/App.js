@@ -17,7 +17,7 @@ export default function App() {
         </main>
 
         <footer>
-          <p className="App-footer"> Created by Camilla with tons of ☕ . It's available as open-source on <a href="https://github.com/hicamilla/new-dictionary">GitHub</a> </p>
+          <p className="App-footer"> Created by <a href="#" target="_blank"> Camilla </a> with tons of ☕ . It's available as open-source on <a href="https://github.com/hicamilla/new-dictionary" target="_blank">GitHub.</a> </p>
       </footer>
       </div>
     </div>

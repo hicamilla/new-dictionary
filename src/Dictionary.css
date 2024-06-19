@@ -1,24 +1,43 @@
-.Dictionary section{
-  font-family: "Raleway", sans-serif;
-  background-color: #E0DED2;
-  padding: 30px;
-  border-radius: 10px;
-  margin: 20px 20px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+:root {
+	--first-font: "Oswald", sans-serif;
+	--second-font: "Noto Sans JP", sans-serif;
+	--yew-color: #184e46;
+	--sky-color: #d5dfed;
+	--sea-color: #d5e6d8;
+	--yorkstone-color: #f3eddf;
+	--name-color: #dad5c8;
+	--raven-color: #444444;
+	--cloud-color: #efefef;
+	--white-color: #ffffff;
+	--copper-color: #6734;
 }
 
-.Dictionary input{
-  font-size: 15px;
-  width: 100%;
-  border-radius: 5px;
-  padding: 12px 5%;
-  border: 1px solid #b7bdad;
+.Dictionary section {
+	font-family: var(--second-font);
+	background-color: var(--name-color);
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px;
+	border-radius: 10px;
+	padding: 30px;
+	margin: 20px 20px;
 }
 
-.Dictionary .exemple{
-  text-align: left;
-  font-size: 13px;
-  font-style: italic;
-  opacity: 0.8;
-  margin-top: 10px;
+.Dictionary input {
+	width: 100%;
+	font-family: var(--second-font);
+	color: var(--raven-color);
+	font-size: 15px;
+	font-weight: 500;
+	border-radius: 5px;
+	padding: 12px 5%;
+	border: 1px solid var(--white-color);
+}
+
+.Dictionary .exemple {
+	font-family: var(--second-font);
+	color: var(--raven-color);
+	text-align: left;
+	font-size: 11px;
+	font-style: italic;
+	opacity: 0.6;
+	margin-top: 08px;
 }
